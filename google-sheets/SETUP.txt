@@ -1,0 +1,23 @@
+GOOGLE SHEETS SETUP
+===================
+
+1) Create a Google Sheet.
+2) Open Extensions -> Apps Script.
+3) Delete the default code and paste the contents of Code.gs from this folder.
+4) Save.
+5) Deploy -> New deployment -> Web app.
+   Execute as: Me
+   Who has access: Anyone
+6) Authorize the script when Google asks.
+7) Copy the Web app URL ending in /exec.
+8) Open assets/js/google-sheets-config.js and replace the empty URL with that /exec URL.
+9) Upload the website after this change.
+
+The script automatically creates two separate sheets:
+- Applications
+- Messages
+
+Admission form -> Applications
+Contact form -> Messages
+
+The browser also keeps a local copy for the existing Admin panel, while the Google Sheet becomes the central online record.
